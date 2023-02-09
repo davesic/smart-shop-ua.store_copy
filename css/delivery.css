@@ -1,0 +1,7 @@
+.delivery-notify{position:fixed;z-index: 100;left:0;bottom:10px;background:#363636;color:#fff;padding:20px;font-family:Arial,"Helvetica Neue",Helvetica,sans-serif!important;font-size:14px;line-height:1.4;-webkit-border-top-right-radius:3px;-webkit-border-bottom-right-radius:3px;-moz-border-radius-topright:3px;-moz-border-radius-bottomright:3px;border-top-right-radius:3px;border-bottom-right-radius:3px;width:270px;box-sizing:border-box;}
+.close-delivery-notify{display:block;position:absolute;background:transparent;color:#fff;top: 0px;right: 0px;font-size:24px;line-height: 1;cursor:pointer;border:none;width: 24px;height: 1em;box-shadow: none;text-align: center;padding: 0;margin: 0;}
+.close-delivery-notify:hover{opacity:.8}
+.delivery-notify .notify-text {color: #fff !important}
+.delivery-notify + .online-users-panel {
+	bottom: 100px;
+}
