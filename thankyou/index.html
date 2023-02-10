@@ -1,262 +1,415 @@
-<html><head><script async src="js/fbevents.js"></script><script type="text/javascript" async src="https://analytics.tiktok.com/i18n/pixel/events.js?sdkid=C6N2CD618TAI47M9RG7G&amp;lib=ttq"></script><script>
-!function (w, d, t) {
-  w.TiktokAnalyticsObject=t;var ttq=w[t]=w[t]||[];ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie"],ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e},ttq.load=function(e,n){var i="https://analytics.tiktok.com/i18n/pixel/events.js";ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=i,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};var o=document.createElement("script");o.type="text/javascript",o.async=!0,o.src=i+"?sdkid="+e+"&lib="+t;var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(o,a)};
+<html>
 
-  ttq.load('C6N2CD618TAI47M9RG7G');
-  ttq.page();
-}(window, document, 'ttq');
-</script>
+<head>
+  <script async src="js/fbevents.js"></script>
 
 
 
 
 
-
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  
+
   <link rel="shortcut icon" href="thankyou-favicon.ico">
   <title>Ваша заявка принята</title>
   <style>
-    body{margin: 0;font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;line-height: 1.5;background-color: rgb(0, 0, 0);}
-    .thankyou{overflow: hidden;box-sizing: border-box;min-height: 300px;background: url(images/thankyou-bg.jpg) center bottom no-repeat #000000;text-align: center;position: relative;padding: 10px;font-size: 16px;}
-    .thankyou__title{color: rgb(10, 161, 80);font-size: 36px;}
-    .thankyou__title--error{color: #da0000;}
-    .thankyou__divider{max-width: 100%;}
-    .thankyou__image{position: absolute;bottom: 0;left: 5%;}
-    .thankyou__notice{font-size: 13px;}
-    .thankyou--full{min-height: 100vh;}
-    .button{background: transparent linear-gradient(to bottom, rgb(13, 181, 57) 0%, rgb(0, 144, 67) 100%) repeat scroll 0 0;border: none;border-bottom: 2px solid rgb(21, 90, 53);outline: 0 none;padding: 15px 25px;text-transform: uppercase;color: #000;font-weight: bold;border-radius: 4px;cursor: pointer;}
-    .button:hover{-webkit-transform: translateY(-1px);-moz-transform: translateY(-1px);-ms-transform: translateY(-1px);-o-transform: translateY(-1px);transform: translateY(-1px);}
-    .button--added{background: transparent linear-gradient(to bottom, rgb(234, 179, 13) 0%, rgb(236, 129, 13) 100%) repeat scroll 0 0;border-bottom: 2px solid rgb(180, 80, 11);}
-    .offer{text-transform: uppercase;background: url(images/thankyou-offerbg.jpg) repeat;color:#000;padding: 20px 10px;text-align: center;}
-    .upsell{margin: 50px auto;width: 92%;max-width: 800px;display: flex;background-color: #fff;border-bottom: 2px solid rgb(222, 225, 227);border-radius: 2px;padding: 10px;color: rgba(0, 0, 0, .8);position: relative;}
-    .upsell__text{flex-basis: 50%;max-width:50%;display: flex;flex-direction: column;justify-content: space-between;padding: 10px;}
-    .upsell__title{margin: 0;font-weight: normal;font-size: 28px;line-height: 1.2;}
-    .upsell__rating{display: block;margin: 10px 0;}
-    .upsell__old-price{font-size: 20px;display: inline-block;margin-right: 10px;}
-    .upsell__new-price{font-size: 32px;color: rgb(10, 161, 80);}
-    .upsell__description{white-space: pre-wrap;word-wrap: break-word;}
-    .upsell__image-container{flex-basis: 50%;padding: 10px;}
-    .upsell__image{width: 100%;}
-    .upsell__discount{background: url(images/thankyou-sale.png) center no-repeat;width: 109px;height: 43px;position: absolute;left: -10px;top: 20px;color: #fff;font-weight: bold;font-size: 22px;box-sizing: border-box;display: block;padding-left: 10px;line-height: 34px;}
-    @media all and (max-width: 600px) {
-      .thankyou__title{font-size: 30px;}
-      .upsell{flex-wrap: wrap;width: 87%;}
-      .upsell__text{flex-basis: 100%; max-width:100%;}
-      .upsell__title, .upsell__price {text-align: center;}
-      .upsell__rating{margin-left: auto;margin-right: auto;}
-      .upsell__image-container{flex-basis: 100%;}
-      .upsell__button-container{text-align: center;}
-      .thankyou__image{display: none;}
-      .thankyou--full .thankyou__image{display: inline;}
+    body {
+      margin: 0;
+      font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+      line-height: 1.5;
+      background-color: rgb(0, 0, 0);
     }
+
+    .thankyou {
+      overflow: hidden;
+      box-sizing: border-box;
+      min-height: 300px;
+      background: url(images/thankyou-bg.jpg) center bottom no-repeat #000000;
+      text-align: center;
+      position: relative;
+      padding: 10px;
+      font-size: 16px;
+    }
+
+    .thankyou__title {
+      color: rgb(10, 161, 80);
+      font-size: 36px;
+    }
+
+    .thankyou__title--error {
+      color: #da0000;
+    }
+
+    .thankyou__divider {
+      max-width: 100%;
+    }
+
+    .thankyou__image {
+      position: absolute;
+      bottom: 0;
+      left: 5%;
+    }
+
+    .thankyou__notice {
+      font-size: 13px;
+    }
+
+    .thankyou--full {
+      min-height: 100vh;
+    }
+
+    .button {
+      background: transparent linear-gradient(to bottom, rgb(13, 181, 57) 0%, rgb(0, 144, 67) 100%) repeat scroll 0 0;
+      border: none;
+      border-bottom: 2px solid rgb(21, 90, 53);
+      outline: 0 none;
+      padding: 15px 25px;
+      text-transform: uppercase;
+      color: #000;
+      font-weight: bold;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .button:hover {
+      -webkit-transform: translateY(-1px);
+      -moz-transform: translateY(-1px);
+      -ms-transform: translateY(-1px);
+      -o-transform: translateY(-1px);
+      transform: translateY(-1px);
+    }
+
+    .button--added {
+      background: transparent linear-gradient(to bottom, rgb(234, 179, 13) 0%, rgb(236, 129, 13) 100%) repeat scroll 0 0;
+      border-bottom: 2px solid rgb(180, 80, 11);
+    }
+
+    .offer {
+      text-transform: uppercase;
+      background: url(images/thankyou-offerbg.jpg) repeat;
+      color: #000;
+      padding: 20px 10px;
+      text-align: center;
+    }
+
+    .upsell {
+      margin: 50px auto;
+      width: 92%;
+      max-width: 800px;
+      display: flex;
+      background-color: #fff;
+      border-bottom: 2px solid rgb(222, 225, 227);
+      border-radius: 2px;
+      padding: 10px;
+      color: rgba(0, 0, 0, .8);
+      position: relative;
+    }
+
+    .upsell__text {
+      flex-basis: 50%;
+      max-width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px;
+    }
+
+    .upsell__title {
+      margin: 0;
+      font-weight: normal;
+      font-size: 28px;
+      line-height: 1.2;
+    }
+
+    .upsell__rating {
+      display: block;
+      margin: 10px 0;
+    }
+
+    .upsell__old-price {
+      font-size: 20px;
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .upsell__new-price {
+      font-size: 32px;
+      color: rgb(10, 161, 80);
+    }
+
+    .upsell__description {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+
+    .upsell__image-container {
+      flex-basis: 50%;
+      padding: 10px;
+    }
+
+    .upsell__image {
+      width: 100%;
+    }
+
+    .upsell__discount {
+      background: url(images/thankyou-sale.png) center no-repeat;
+      width: 109px;
+      height: 43px;
+      position: absolute;
+      left: -10px;
+      top: 20px;
+      color: #fff;
+      font-weight: bold;
+      font-size: 22px;
+      box-sizing: border-box;
+      display: block;
+      padding-left: 10px;
+      line-height: 34px;
+    }
+
+    @media all and (max-width: 600px) {
+      .thankyou__title {
+        font-size: 30px;
+      }
+
+      .upsell {
+        flex-wrap: wrap;
+        width: 87%;
+      }
+
+      .upsell__text {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+
+      .upsell__title,
+      .upsell__price {
+        text-align: center;
+      }
+
+      .upsell__rating {
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .upsell__image-container {
+        flex-basis: 100%;
+      }
+
+      .upsell__button-container {
+        text-align: center;
+      }
+
+      .thankyou__image {
+        display: none;
+      }
+
+      .thankyou--full .thankyou__image {
+        display: inline;
+      }
+    }
+
     @media all and (max-height: 500px) {
-      .thankyou__image{width: 130px;height: auto;}
+      .thankyou__image {
+        width: 130px;
+        height: auto;
+      }
     }
   </style>
 
 
 
 </head>
+
 <body>
-<main>
-  <div class="thankyou ">
+  <main>
+    <div class="thankyou ">
 
-        <h1 class="thankyou__title">Дякуємо, заявку прийнято!</h1>
-    <p style="color:#fff">
-      Графік роботи контакт-центру 10:00–19:00. Оператор зв'яжеться з Вами протягом години (зазвичай швидше)     </p>
-    <img class="thankyou__divider" src="images/thankyou-divider.png">
-    <p class="thankyou__notice" <p style="color:#fff">Якщо ви припустилися помилки, поверніться на сторінку замовлення та надішліть форму ще раз</p>
+      <h1 class="thankyou__title">Дякуємо, заявку прийнято!</h1>
+      <p style="color:#fff">
+        Графік роботи контакт-центру 10:00–19:00. Оператор зв'яжеться з Вами протягом години (зазвичай швидше) </p>
+      <img class="thankyou__divider" src="images/thankyou-divider.png">
+      <p class="thankyou__notice" <p style="color:#fff">Якщо ви припустилися помилки, поверніться на сторінку замовлення
+        та надішліть форму ще раз</p>
 
-    
-    <button class=" button thankyou__button" onclick="history.go(-1);">Повернутись</button>
-    <img class="thankyou__image" src="images/thankyou-girl.png">
-  </div>
+
+      <button class=" button thankyou__button" onclick="history.go(-1);">Повернутись</button>
+      <img class="thankyou__image" src="images/thankyou-girl.png">
+    </div>
     <div class="offer">
-    <b>Для нових клієнтів ми маємо ексклюзивну пропозицію!</b><br>
-    Ви можете додати до замовлення ці товари з індивідуальною знижкою:
-  </div>
-      <div class="upsell">
-    <div class="upsell__image-container">
-      <img class="upsell__image" src="images/philips-20000mah-power-bank.jpg">
+      <b>Для нових клієнтів ми маємо ексклюзивну пропозицію!</b><br>
+      Ви можете додати до замовлення ці товари з індивідуальною знижкою:
     </div>
-    <span class="upsell__discount">-300Грн</span>
-    <div class="upsell__text">
-      <div>
-        <h2 class="upsell__title">Power Bank Philips 20000mAh, швидка зарядка, 2 USB</h2>
-        <img class="upsell__rating" src="images/thankyou-rating.png">
-        <div class="upsell__price">
-          <span class="upsell__old-price"><del>1800</del></span>
-          <span class="upsell__new-price">1500</span>грн
+    <div class="upsell">
+      <div class="upsell__image-container">
+        <img class="upsell__image" src="images/philips-20000mah-power-bank.jpg">
+      </div>
+      <span class="upsell__discount">-300Грн</span>
+      <div class="upsell__text">
+        <div>
+          <h2 class="upsell__title">Power Bank Philips 20000mAh, швидка зарядка, 2 USB</h2>
+          <img class="upsell__rating" src="images/thankyou-rating.png">
+          <div class="upsell__price">
+            <span class="upsell__old-price"><del>1800</del></span>
+            <span class="upsell__new-price">1500</span>грн
+          </div>
+          <p class="upsell__description">Характеристики
+            Бренд: Philips
+            Вид: Повербанк
+            Місткість батареї мА*год: 20000
+            Призначення: Для телефонів, планшетів
+            Тип акумулятора: Літій-полімерний;
+            Місткість акумулятора: 20000 мА * год 3.7V 74Wh;
+            Вход питания:Micro USB 5 В / 2 А, 9 В / 2 А 12 В / 1,5 А
+            Вход Type-C: 5 В / 3 А 9 В / 2 А 12 В / 1,5 Аа
+            Максимальний струм: 2.1 А;
+            Функції заряджання: Power Delivery
+            Два порти Micro-USB та USB-C для власної зарядки;
+            Підтримка заряджання малим струмом;
+            Два порти USB-A для одночасного заряджання двох пристроїв;
+            Вхідні інтерфейси: Micro-USB, USB Type C
+            Вихідні інтерфейси: 2 x USB-A;
+
+            Параметри виходу
+            USB-A: 5.1V - 2.1A</p>
         </div>
-        <p class="upsell__description">Характеристики
-Бренд: Philips
-Вид: Повербанк
-Місткість батареї мА*год: 20000
-Призначення: Для телефонів, планшетів
-Тип акумулятора: Літій-полімерний;
-Місткість акумулятора: 20000 мА * год 3.7V 74Wh; 
-Вход питания:Micro USB 5 В / 2 А, 9 В / 2 А 12 В / 1,5 А
-Вход Type-C: 5 В / 3 А 9 В / 2 А 12 В / 1,5 Аа
-Максимальний струм: 2.1 А;
-Функції заряджання: Power Delivery
-Два порти Micro-USB та USB-C для власної зарядки;
-Підтримка заряджання малим струмом;
-Два порти USB-A для одночасного заряджання двох пристроїв;
-Вхідні інтерфейси: Micro-USB, USB Type C
-Вихідні інтерфейси: 2 x USB-A;
 
-Параметри виходу
-USB-A: 5.1V - 2.1A</p>
-      </div>
-     
       </div>
     </div>
-  
-        <div class="upsell">
-    <div class="upsell__image-container">
-      <img class="upsell__image" src="images/_ttec-pb10-20-000mah-pd-20w-tasinabilir-sarj-aleti-pow-siyah.jpg">
-    </div>
-    <span class="upsell__discount">-400Грн</span>
-    <div class="upsell__text">
-      <div>
-        <h2 class="upsell__title">Павербанк Mojue TTEK PB10 20000мАг, швидка зарядка</h2>
-        <img class="upsell__rating" src="images/thankyou-rating.png">
-        <div class="upsell__price">
-          <span class="upsell__old-price"><del>1900</del></span>
-          <span class="upsell__new-price">1500</span>грн
+
+    <div class="upsell">
+      <div class="upsell__image-container">
+        <img class="upsell__image" src="images/_ttec-pb10-20-000mah-pd-20w-tasinabilir-sarj-aleti-pow-siyah.jpg">
+      </div>
+      <span class="upsell__discount">-400Грн</span>
+      <div class="upsell__text">
+        <div>
+          <h2 class="upsell__title">Павербанк Mojue TTEK PB10 20000мАг, швидка зарядка</h2>
+          <img class="upsell__rating" src="images/thankyou-rating.png">
+          <div class="upsell__price">
+            <span class="upsell__old-price"><del>1900</del></span>
+            <span class="upsell__new-price">1500</span>грн
+          </div>
+          <p class="upsell__description">Акумулятор надвисокої ємності 20 000 мАг
+
+            Одночасна зарядка 2 пристроїв
+
+            Можна заряджати за допомогою кабелів Type-C або Micro USB
+
+            Підтримка швидкої зарядки PD/QC
+
+            Світлодіодний індикатор батареї
+
+            Захист за струмом для безпечного заряджання
+
+            Для смартфонів і не тільки</p>
         </div>
-        <p class="upsell__description">Акумулятор надвисокої ємності 20 000 мАг
 
-Одночасна зарядка 2 пристроїв
-
-Можна заряджати за допомогою кабелів Type-C або Micro USB
-
-Підтримка швидкої зарядки PD/QC
-
-Світлодіодний індикатор батареї
-
-Захист за струмом для безпечного заряджання
-
-Для смартфонів і не тільки</p>
-      </div>
-     
       </div>
     </div>
-  
-        <div class="upsell">
-    <div class="upsell__image-container">
-      <img class="upsell__image" src="images/_%C3%90_%C3%90%C2%B5%C3%90%C2%B7%20%C3%90%C2%BD%C3%90%C2%B0%C3%90%C2%B7%C3%90%C2%B2%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%B8%C3%91_.jpeg">
-    </div>
-    <span class="upsell__discount">-400Грн</span>
-    <div class="upsell__text">
-      <div>
-        <h2 class="upsell__title">Павербанк ILNOVA 7469, 20000мАh 74Wh, бездротова зарядка, 4 кабеля</h2>
-        <img class="upsell__rating" src="images/thankyou-rating.png">
-        <div class="upsell__price">
-          <span class="upsell__old-price"><del>2150</del></span>
-          <span class="upsell__new-price">1750</span>грн
+
+    <div class="upsell">
+      <div class="upsell__image-container">
+        <img class="upsell__image"
+          src="images/_%C3%90_%C3%90%C2%B5%C3%90%C2%B7%20%C3%90%C2%BD%C3%90%C2%B0%C3%90%C2%B7%C3%90%C2%B2%C3%90%C2%B0%C3%90%C2%BD%C3%90%C2%B8%C3%91_.jpeg">
+      </div>
+      <span class="upsell__discount">-400Грн</span>
+      <div class="upsell__text">
+        <div>
+          <h2 class="upsell__title">Павербанк ILNOVA 7469, 20000мАh 74Wh, бездротова зарядка, 4 кабеля</h2>
+          <img class="upsell__rating" src="images/thankyou-rating.png">
+          <div class="upsell__price">
+            <span class="upsell__old-price"><del>2150</del></span>
+            <span class="upsell__new-price">1750</span>грн
+          </div>
+          <p class="upsell__description">Характеристики
+            Призначення: Для телефонів, планшетів
+            Тип акумулятора: Літій-полімерний;
+            Місткість акумулятора: 20000 мА * год 74Wh;
+            Максимальний струм: 2.1 А;
+            Функції заряджання: Power Delivery
+            Два порти Micro-USB та USB-C для власної зарядки;
+            Підтримка заряджання малим струмом;
+            Вхідні інтерфейси: Micro-USB, USB Type C, USB-A;
+            Вихідні інтерфейси: 2 x USB-A; Micro USB, Type-C і Lightning</p>
         </div>
-        <p class="upsell__description">Характеристики
-Призначення: Для телефонів, планшетів
-Тип акумулятора: Літій-полімерний;
-Місткість акумулятора: 20000 мА * год 74Wh; 
-Максимальний струм: 2.1 А;
-Функції заряджання: Power Delivery
-Два порти Micro-USB та USB-C для власної зарядки;
-Підтримка заряджання малим струмом; 
-Вхідні інтерфейси: Micro-USB, USB Type C, USB-A;
-Вихідні інтерфейси: 2 x USB-A; Micro USB, Type-C і Lightning</p>
-      </div>
-     
+
       </div>
     </div>
-  
-        <div class="upsell">
-    <div class="upsell__image-container">
-      <img class="upsell__image" src="images/296880224.jpg">
-    </div>
-    <span class="upsell__discount">-800Грн</span>
-    <div class="upsell__text">
-      <div>
-        <h2 class="upsell__title">Портативна сонячна станція освітлення GS906P Solar +сонячна панель, павербанк, Радіо+Bluetooth+MP3, 10А/ч</h2>
-        <img class="upsell__rating" src="images/thankyou-rating.png">
-        <div class="upsell__price">
-          <span class="upsell__old-price"><del>3600</del></span>
-          <span class="upsell__new-price">2800</span>грн
+
+    <div class="upsell">
+      <div class="upsell__image-container">
+        <img class="upsell__image" src="images/296880224.jpg">
+      </div>
+      <span class="upsell__discount">-800Грн</span>
+      <div class="upsell__text">
+        <div>
+          <h2 class="upsell__title">Портативна сонячна станція освітлення GS906P Solar +сонячна панель, павербанк,
+            Радіо+Bluetooth+MP3, 10А/ч</h2>
+          <img class="upsell__rating" src="images/thankyou-rating.png">
+          <div class="upsell__price">
+            <span class="upsell__old-price"><del>3600</del></span>
+            <span class="upsell__new-price">2800</span>грн
+          </div>
+          <p class="upsell__description">Акумулятор: 5V 10А·ч
+
+            Сонячна панель: 6В 3,5W
+
+            Кількість виносних ламп: 3 шт
+
+            Потужність виносної лампи: 3 Вт.
+
+            Довжина кабелю виносних ламп: 3 м
+
+            Перехідники для заряджання мобільних телефонів: micro usb, type-c, lightning Радіо FM, Bluetooth
+
+            Слоти USB, microSD
+
+            Вбудоване FM-радіо з антеною
+
+            MP3 плеєр
+
+            USB
+
+            micro-SD
+
+            4 види зарядних шнурів
+
+            Ліхтарик та аварійна лампочка
+
+            Заряджання від мережі 220В та сонячної батареї
+
+            Час заряджання: 8-12 год</p>
         </div>
-        <p class="upsell__description">Акумулятор: 5V 10А·ч
 
-Сонячна панель: 6В 3,5W
-
-Кількість виносних ламп: 3 шт
-
-Потужність виносної лампи: 3 Вт.
-
-Довжина кабелю виносних ламп: 3 м
-
-Перехідники для заряджання мобільних телефонів: micro usb, type-c, lightning Радіо FM, Bluetooth
-
-Слоти USB, microSD
-
-Вбудоване FM-радіо з антеною
-
-MP3 плеєр
-
-USB
-
-micro-SD
-
-4 види зарядних шнурів
-
-Ліхтарик та аварійна лампочка
-
-Заряджання від мережі 220В та сонячної батареї
-
-Час заряджання: 8-12 год</p>
-      </div>
-     
       </div>
     </div>
-  
-      </main>
-<script>
-  (function(){
-    var phone = null;
-    for (var i = 0, upsells = document.querySelectorAll('.upsell'); i < upsells.length; i++) {
-      (function(upsell) {
-        var title = upsell.querySelector('.upsell__title').innerHTML;
-        var button = upsell.querySelector('.button');
-        button.addEventListener('click', function () {
-          button.disabled = true;
-          button.innerHTML = 'Добавлено';
-          button.classList.add('button--added');
-          var xhr = new XMLHttpRequest();
-          xhr.open('POST', window.location.href);
-          xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
-          xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-          phone && xhr.send('phone=' + phone + '&upsell=' + encodeURIComponent(title));
-        });
-      })(upsells[i]);
-    }
-  })();
-</script>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '521893026718100');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=521893026718100&amp;ev=PageView&amp;noscript=1"></noscript>
-<!-- End Meta Pixel Code -->
 
-</body></html>
+  </main>
+  <script>
+    (function () {
+      var phone = null;
+      for (var i = 0, upsells = document.querySelectorAll('.upsell'); i < upsells.length; i++) {
+        (function (upsell) {
+          var title = upsell.querySelector('.upsell__title').innerHTML;
+          var button = upsell.querySelector('.button');
+          button.addEventListener('click', function () {
+            button.disabled = true;
+            button.innerHTML = 'Добавлено';
+            button.classList.add('button--added');
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', window.location.href);
+            xhr.setRequestHeader("X-Requested-With", "XMLHttpRequest");
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+            phone && xhr.send('phone=' + phone + '&upsell=' + encodeURIComponent(title));
+          });
+        })(upsells[i]);
+      }
+    })();
+  </script>
+ 
+
+</body>
+
+</html>
